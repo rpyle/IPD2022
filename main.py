@@ -34,11 +34,12 @@ import importlib
     
 import example0, example1, example2, example3
 import example4, example5
+import ford
 
 betray = example1
 collude = example0
 
-modules = [example0, example1, example2, example3, example4, example5]
+modules = [example0, example1, example2, example3, example4, example5, ford]
 
 for module in modules:
     importlib.reload(module)
