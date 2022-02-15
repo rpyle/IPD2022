@@ -32,13 +32,19 @@ import random
 import os.path  
 import importlib            
     
-import example0, example1, example2, example3
-import example4, example5, mcmullen
+import example0
+import example1
+import example2
+import example3
+import example4
+import example5
+import moyer
+import moyertrolling1
+import moyertrolling2
+import moyertrolling3
 
-betray = example1
-collude = example0
-
-modules = [example0, example1, example2, example3, example4, example5, mcmullen]
+# Load players
+modules = [example0, example1, example2, example3, example4, example5, moyer, moyertrolling1, moyertrolling2, moyertrolling3]
 
 for module in modules:
     importlib.reload(module)
