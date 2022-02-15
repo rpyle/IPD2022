@@ -7,8 +7,8 @@
 ####
 
 team_name = 'maggin'
-strategy_name = 'Collude'
-strategy_description = 'Always collude.'
+strategy_name = 'Pattern Recongnition'
+strategy_description = 'Identify pattern that each player engages in.'
     
 def move(my_history, their_history, my_score, their_score):
     '''Make my move based on the history with this player.
