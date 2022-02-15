@@ -33,12 +33,18 @@ import os.path
 import importlib            
     
 import example0, example1, example2, example3
-import example4, example5, mcmullen
+
+import example4, example5, Lowell
+
+
 
 betray = example1
 collude = example0
 
-modules = [example0, example1, example2, example3, example4, example5, mcmullen]
+
+modules = [example0, example1, example2, example3, example4, example5, Lowell]
+
+
 
 for module in modules:
     importlib.reload(module)
