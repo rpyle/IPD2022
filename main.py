@@ -34,16 +34,15 @@ import importlib
     
 import example0, example1, example2, example3
 
-import example4, example5, Lowell
-
+import example4, example5
+import Fitzgerald 
 
 
 betray = example1
 collude = example0
 
 
-modules = [example0, example1, example2, example3, example4, example5, Lowell]
-
+modules = [example0, example1, example2, example3, example4, example5, Fitzgerald]
 
 
 for module in modules:
