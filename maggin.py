@@ -24,4 +24,4 @@ def move(my_history, their_history, my_score, their_score):
     # This player always colludes.
     return 'c'
 
-'Idea: run your own historical simulation before you play against anyone. This will allow you to determine how your opponent will play and give the percentage chances. Then I will play according to what the best play is againist my opponent, based on the data from the simulation.''
+#Idea: run your own historical simulation before you play against anyone. This will allow you to determine how your opponent will play and give the percentage chances. Then I will play according to what the best play is againist my opponent, based on the data from the simulation.
