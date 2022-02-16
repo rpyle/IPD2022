@@ -31,14 +31,35 @@
 import random
 import os.path  
 import importlib            
-    
-import example0, example1, example2, example3
-import example4, example5, mcmullen
 
-betray = example1
-collude = example0
+import mucher
+import Kauffman
+import bressler
+import dawood
+import Fitzgerald
+import graham
+import Lowell
+import maggin
 
-modules = [example0, example1, example2, example3, example4, example5, mcmullen]
+import miner
+import schoonover
+import stacks
+import whitney
+import wisley
+import moyer
+import moyertrolling1
+import moyertrolling2
+import moyertrolling3
+import Logan
+import farace
+import phipps
+import tanner
+import ford
+
+
+
+modules = [dawood, bressler, Fitzgerald, graham, Lowell, maggin, miner, schoonover, whitney, wisley, mucher, Kauffman, moyer, moyertrolling1, moyertrolling2, moyertrolling3, Logan, farace, phipps, tanner, ford]
+
 
 for module in modules:
     importlib.reload(module)
