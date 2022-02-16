@@ -9,7 +9,7 @@
 team_name = 'Logan'
 strategy_name = 'Adapt and Overcome'
 strategy_description = '''\
-Check the last move, if the other player colluded then I betray, and if the other player betrayed me, then I collude.
+Check the last move, if the other player colluded then I collude, and if the other player betrayed me, then I betray.
 '''
 
 import random
@@ -26,14 +26,14 @@ def move(my_history, their_history, my_score, their_score):
     '''
 
     if 'c' in their_history[-1:]: # If the other player has betrayed within last 10 rounds, 
-        return 'b'               # Betray.
+        return 'c'               # Betray.
     else:
         if random.random()<0.95: # 70% of the other rounds
             return 'b'         # Betray
         else:
             return 'c'         # but 5% of the time collude
     if 'b' in their_history[-1:]: # If the other player has betrayed within last 10 rounds, 
-        return 'c'               # Betray.
+        return 'b'               # Betray.
     else:
         if random.random()<0.95: # 70% of the other rounds
             return 'b'         # Betray
