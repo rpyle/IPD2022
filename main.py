@@ -40,6 +40,7 @@ import example0, example1, example2, example3
 
 
 import example4, example5
+
 import mucher
 import Kauffman
 import bressler
@@ -58,16 +59,13 @@ import moyer
 import moyertrolling1
 import moyertrolling2
 import moyertrolling3
+import Logan
 
 
 betray = example1
 collude = example0
 
-
-
-modules = [example0, example1, example2, example3, example4, example5, dawood, bressler, Fitzgerald, graham, Lowell, maggin, mcmullen, miner, schoonover, whitney, wisley, mucher, Kauffman, moyer, moyertrolling1, moyertrolling2, moyertrolling3]
-
-
+modules = [example0, example1, example2, example3, example4, example5, dawood, bressler, Fitzgerald, graham, Lowell, maggin, mcmullen, miner, schoonover, whitney, wisley, mucher, Kauffman, moyer, moyertrolling1, moyertrolling2, moyertrolling3, Logan]
 
 
 for module in modules:
