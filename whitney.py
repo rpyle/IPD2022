@@ -5,7 +5,7 @@ Check the last 3 moves and betray if I've been betrayed in any of them. Otherwis
 '''
 
 import random
-    
+
 def move(my_history, their_history, my_score, their_score):
     if 'b' in their_history[-3:]: # If the other player has betrayed within last 3 rounds, 
         return 'b'               # Betray.

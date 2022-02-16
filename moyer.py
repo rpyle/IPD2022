@@ -14,6 +14,7 @@ round = 0
 state = 0
 
 def move(my_history, their_history, my_score, their_score):
+  
   global round
   global state
   try:
@@ -26,7 +27,6 @@ def move(my_history, their_history, my_score, their_score):
   if round < 10:
     pass
   elif ((their_history[0] == 'c') and (their_history[1] == 'b') and (their_history[2] == 'c') and (their_history[3] == 'c') and (their_history[4] == 'b') and (their_history[5] == 'b') and (their_history[6] == 'b') and (their_history[7] == 'c') and (their_history[8] == 'b') and (their_history[9] == 'c')):
-    print(my_history[-1])
     state = 2
     
   #if round == 11:
@@ -65,5 +65,9 @@ def move(my_history, their_history, my_score, their_score):
       #  return 'b'
       #else:
         return 'c'
+  #if 'b' in their_history[-20:]:
+  #  return 'b'
+  #else:
+  #  return 'c'
     
     

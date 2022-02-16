@@ -48,7 +48,7 @@ import Fitzgerald
 import graham
 import Lowell
 import maggin
-import mcmullen
+#import mcmullen
 import miner
 import schoonover
 import stacks
@@ -65,7 +65,7 @@ collude = example0
 
 
 
-modules = [example0, example1, example2, example3, example4, example5, dawood, bressler, Fitzgerald, graham, Lowell, maggin, mcmullen, miner, schoonover, whitney, wisley, mucher, Kauffman, moyer, moyertrolling1, moyertrolling2, moyertrolling3]
+modules = [example0, example1, example2, example3, example4, example5, dawood, bressler, Fitzgerald, graham, Lowell, maggin, miner, schoonover, whitney, wisley, mucher, Kauffman, moyer, moyertrolling1, moyertrolling2, moyertrolling3]
 
 
 
