@@ -29,9 +29,7 @@ def move(my_history, their_history, my_score, their_score):
   elif ((their_history[0] == 'c') and (their_history[1] == 'b') and (their_history[2] == 'c') and (their_history[3] == 'c') and (their_history[4] == 'b') and (their_history[5] == 'b') and (their_history[6] == 'b') and (their_history[7] == 'c') and (their_history[8] == 'b') and (their_history[9] == 'c')):
     print(my_history[-1])
     state = 2
-  #else:
-    #state = 1
-
+    
   #if round == 11:
   #  print(their_history[0] + their_history[1] + their_history[2] + their_history[3] + #their_history[4] + their_history[5] + their_history[6] + their_history[7] + #their_history[8] + their_history[9])
 
