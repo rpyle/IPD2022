@@ -34,8 +34,10 @@ import importlib
 
 
 
+
 import mucher
 import Kauffman
+import pacheco
 import bressler
 import dawood
 import support_dawood
@@ -60,7 +62,8 @@ import tanner
 import ford
 import deesen
 
-modules = [dawood, support_dawood, bressler, Fitzgerald, graham, Lowell, maggin, miner, schoonover, whitney, wisley, mucher, Kauffman, moyer, moyertrolling1, moyertrolling2, moyertrolling3, Logan, farace, phipps, tanner, ford, mcmullen, graham, deesen, stacks]
+
+modules = [dawood, support_dawood, bressler, Fitzgerald, graham, Lowell, maggin, miner, schoonover, whitney, wisley, mucher, Kauffman, moyer, moyertrolling1, moyertrolling2, moyertrolling3, Logan, farace, phipps, tanner, ford, mcmullen, graham, deesen, stacks, pacheco]
 
 
 for module in modules:
