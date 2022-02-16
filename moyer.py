@@ -61,9 +61,9 @@ def move(my_history, their_history, my_score, their_score):
     elif (round == 10):
       return 'c'
     elif (round > 10):
-      if 'b' in their_history[-20:]:
-        return 'b'
-      else:
+      #if 'b' in their_history[-20:]:
+      #  return 'b'
+      #else:
         return 'c'
     
     
