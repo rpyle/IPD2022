@@ -13,6 +13,7 @@ team_name = 'maggin'
 strategy_name = 'Pattern Recognition'
 strategy_description = 'Identify pattern that each player engages in.'
 
+
     # This player always adapts then either colludes or betrays based on opponent's   historical pattern.
 
 def data_collection(my_history, their_history, my_score, their_score):
@@ -38,6 +39,6 @@ def data_collection(my_history, their_history, my_score, their_score):
             
 
 
-  
+
 
 
