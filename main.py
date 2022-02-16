@@ -32,6 +32,8 @@ import random
 import os.path  
 import importlib            
 
+
+
 import mucher
 import Kauffman
 import bressler
@@ -40,7 +42,7 @@ import Fitzgerald
 import graham
 import Lowell
 import maggin
-
+import mcmullen
 import miner
 import schoonover
 import stacks
@@ -58,7 +60,7 @@ import ford
 
 
 
-modules = [dawood, bressler, Fitzgerald, graham, Lowell, maggin, miner, schoonover, whitney, wisley, mucher, Kauffman, moyer, moyertrolling1, moyertrolling2, moyertrolling3, Logan, farace, phipps, tanner, ford]
+modules = [dawood, bressler, Fitzgerald, graham, Lowell, maggin, miner, schoonover, whitney, wisley, mucher, Kauffman, moyer, moyertrolling1, moyertrolling2, moyertrolling3, Logan, farace, phipps, tanner, ford, mcmullen]
 
 
 for module in modules:
