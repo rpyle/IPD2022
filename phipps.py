@@ -8,7 +8,7 @@
 
 team_name = 'phipps'
 strategy_name = 'Play Safer'
-strategy_description = 'Collude 80% of the time but check the last 20 moves and betray if Ive been betrayed in any of them then betray them'
+strategy_description = 'I will collude 80% of the time but check the last 20 moves and betray if Ive been betrayed in any of them then betray them'
 
 import random
     
