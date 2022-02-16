@@ -31,10 +31,10 @@ def move(my_history, their_history, my_score, their_score):
   #else:
     #state = 1
 
-  if round == 11:
-    print(their_history[0] + their_history[1] + their_history[2] + their_history[3] + their_history[4] + their_history[5] + their_history[6] + their_history[7] + their_history[8] + their_history[9])
+  #if round == 11:
+  #  print(their_history[0] + their_history[1] + their_history[2] + their_history[3] + #their_history[4] + their_history[5] + their_history[6] + their_history[7] + #their_history[8] + their_history[9])
 
-  print(str(state) + ', ' + str(round))
+  #print(str(state) + ', ' + str(round))
   round = round + 1
 
   if (state == 1):
