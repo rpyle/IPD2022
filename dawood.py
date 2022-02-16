@@ -1,14 +1,6 @@
-####
-# Each team's file must define four tokens:
-#     team_name: a string
-#     strategy_name: a string
-#     strategy_description: a string
-#     move: A function that returns 'c' or 'b'
-####
-
-team_name = 'stacks'
-strategy_name = 'betray if betrayed'
-strategy_description = 'do what the players do to me'
+team_name = 'dawood'
+strategy_name = 'gradual collude '
+strategy_description = 'collude first two runs, betray all others untill opponent colludes'
     
 def move(my_history, their_history, my_score, their_score):
     '''Make my move based on the history with this player.
@@ -20,17 +12,14 @@ def move(my_history, their_history, my_score, their_score):
     
     Returns 'c' or 'b' for collude or betray.
     '''
-    
-    
 
-    if len(my_history)==0: # First round collude.
+    if len(my_history)<=1: # collude first two rounds
         return 'c'
-    if 'b' in their_history[-1]:
-        return 'b' # Betray if they betrayed last time
+    elif their_history[-1]=='b':
+        return 'b' 
     else:
-        return 'c' # otherwise collude.
-    if (their_score < 75):
-      return 'c'
-    else:
+        return 'c'
+    if (their_score < 50):
       return 'b'
 
+#cooperates the two first moves, then begins to defect after two consecutive defections of its opponent. Returns to cooperation after two consecutive cooperations of its opponent.
