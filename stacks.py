@@ -22,7 +22,13 @@ def move(my_history, their_history, my_score, their_score):
     '''
     
     
+    if len(my_history)==0: # First round collude.
+        return 'c'
     if 'b' in their_history[-1]:
         return 'b' # Betray if they betrayed last time
     else:
         return 'c' # otherwise collude.
+    if (their_score < 75):
+      return 'c'
+    else:
+      return 'b'
