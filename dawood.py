@@ -13,13 +13,19 @@ def move(my_history, their_history, my_score, their_score):
     Returns 'c' or 'b' for collude or betray.
     '''
 
-    if len(my_history)<=1: # collude first two rounds
-        return 'c'
+    if len(my_history)<=1: # collude first round
+      return 'c'
+    if len(my_history)<=2:
+      return 'c'
+    if len(my_history)<=3:
+      return 'b'
+    if len(my_history)<=4:
+      return 'b'
+    if len(my_history)<=5:
+      return 'c'
     elif their_history[-1]=='b':
         return 'b' 
     else:
         return 'c'
-    if (their_score < 50):
-      return 'b'
 
 #cooperates the two first moves, then begins to defect after two consecutive defections of its opponent. Returns to cooperation after two consecutive cooperations of its opponent.

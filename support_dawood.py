@@ -15,30 +15,7 @@ def move(my_history, their_history, my_score, their_score):
     Returns 'c' or 'b' for collude or betray.
     '''
 
-
-    import example0, example1, example2, example3
-
-    import example4, example5
-
-    import bressler
-    import Fitzgerald
-    import graham
-    import Lowell
-    import mcmullen
-    import miner
-    import stacks
-    import whitney
-    import wisley
-    import dawood
-  
-    modules = [example0, example1, example2, example3, example4, example5,          bressler, Fitzgerald, graham, Lowell, mcmullen, miner, whitney, wisley, stacks]
-  
-    support = [dawood]
-  
-    if len(my_history)<=1:
-      for mod in modules:
-        return 'b'
-
-      for fan in support:
-        return 'c'
-
+    if len(their_history)<=1 == 'c' and len(their_history)<=2 == 'c' and len(their_history)<=3 == 'b' and len(their_history)<=4 == 'b' and len(their_history)<=5 == 'c':
+      return 'c'
+    else: 
+      return 'b'
