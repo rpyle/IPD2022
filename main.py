@@ -32,12 +32,11 @@ import random
 import os.path  
 import importlib            
 
-
-
 import mucher
 import Kauffman
 import bressler
 import dawood
+import support_dawood
 import Fitzgerald
 import graham
 import Lowell
@@ -59,9 +58,8 @@ import tanner
 import ford
 import graham
 
+modules = [dawood, support_dawood, bressler, Fitzgerald, graham, Lowell, maggin, miner, schoonover, whitney, wisley, mucher, Kauffman, moyer, moyertrolling1, moyertrolling2, moyertrolling3, Logan, farace, phipps, tanner, ford, mcmullen, graham]
 
-
-modules = [dawood, bressler, Fitzgerald, graham, Lowell, maggin, miner, schoonover, whitney, wisley, mucher, Kauffman, moyer, moyertrolling1, moyertrolling2, moyertrolling3, Logan, farace, phipps, tanner, ford, mcmullen, graham]
 
 
 for module in modules:
