@@ -6,11 +6,13 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = 'maggin'
+team_name = 'E5'
+strategy_name = 'Always collude unless betrayed within last 10 rounds.'
+strategy_description = '''\
+Check the last 10 moves and betray if I've been betrayed in any of them. Otherwise, collude 100% of the time.
+'''
 
-strategy_name = 'Pattern Recongnition'
-strategy_description = 'Identify pattern that each player engages in.'
-
+import random
     
 def move(my_history, their_history, my_score, their_score):
     '''Make my move based on the history with this player.
@@ -22,10 +24,14 @@ def move(my_history, their_history, my_score, their_score):
     
     Returns 'c' or 'b' for collude or betray.
     '''
+
+    if 'b' in their_history[-1:]: # If the other player has betrayed within last round, 
+        return 'b'               # Betray.
+    else:
+        if random.random()<0.1: 
+            return 'b'         # Betray
+        else:
+            return 'c'         
     
-    # This player always colludes.
-    return 'c'
-
-
-#Idea: run your own historical simulation before you play against anyone. This will allow you to determine how your opponent will play and give the percentage chances. Then I will play according to what the best play is againist my opponent, based on the data from the simulation.
-
+    
+    
