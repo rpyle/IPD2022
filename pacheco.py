@@ -8,7 +8,7 @@
 
 team_name = 'alli'
 strategy_name = 'collude unless betrayed'
-strategy_description = 'always collude unless the other player betrays you twice'
+strategy_description = 'always collude unless the other player betrays you then keep betraying'
     
 def move(my_history, their_history, my_score, their_score):
     '''Make my move based on the history with this player.
@@ -20,9 +20,7 @@ def move(my_history, their_history, my_score, their_score):
     
     Returns 'c' or 'b' for collude or betray.
     '''
-    if len(my_history)==0: # collude first round
+    if len(my_history)==0: # collude first round until they betray
         return 'c'
-    elif my_history[-1]=='c' and their_history[-2]=='b':
-        return 'b' # Betray if they were severely punished last time,
-    else:
-        return 'c' # otherwise collude.
+    elif their_history[-1]=='b':
+        return 'b' # keep betraying because they are not cool
