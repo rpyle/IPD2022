@@ -8,9 +8,8 @@
 
 team_name = 'moyer'
 strategy_name = 'Sacrifice1'
-strategy_description = ':)'
+strategy_description = 'Sacrifices itself given the right conditions'
   
-import random
 round = 0
 state = 0
 

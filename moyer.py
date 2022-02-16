@@ -8,9 +8,8 @@
 
 team_name = 'moyer'
 strategy_name = 'Malice'
-strategy_description = ':)'
+strategy_description = 'Accepts sacrifices'
   
-import random
 round = 0
 state = 0
 
