@@ -6,9 +6,9 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = 'Miner'
-strategy_name = 'Collude With Revenge'
-strategy_description = 'Collude most of the time unless they betray'
+team_name = 'alli'
+strategy_name = 'collude unless betrayed'
+strategy_description = 'always collude unless the other player betrays you twice'
     
 def move(my_history, their_history, my_score, their_score):
     '''Make my move based on the history with this player.
@@ -20,11 +20,9 @@ def move(my_history, their_history, my_score, their_score):
     
     Returns 'c' or 'b' for collude or betray.
     '''
-    
-    # This player always colludes.
-    if 'b' in their_history [-2:]: 
-      return 'b' # betray if they did in the last 2 rounds
+    if len(my_history)==0: # collude first round
+        return 'c'
+    elif my_history[-1]=='c' and their_history[-2]=='b':
+        return 'b' # Betray if they were severely punished last time,
     else:
-      return 'c' # otherwise collude
-  
-    
+        return 'c' # otherwise collude.

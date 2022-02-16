@@ -34,13 +34,33 @@ import importlib
     
 import example0, example1, example2, example3
 
+
+
 import example4, example5
+import mucher
+import Kauffman
+import bressler
+import dawood
+import Fitzgerald
+import graham
+import Lowell
+import maggin
+import mcmullen
+import miner
+import schoonover
+import stacks
+import whitney
+import wisley
+
+
 
 betray = example1
 collude = example0
 
 
-modules = [example0, example1, example2, example3, example4, example5]
+
+modules = [example0, example1, example2, example3, example4, example5, dawood, bressler, Fitzgerald, graham, Lowell, maggin, mcmullen, miner, schoonover, whitney, wisley, mucher, Kauffman]
+
 
 
 for module in modules:
