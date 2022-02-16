@@ -38,11 +38,6 @@ def move(my_history, their_history, my_score, their_score):
   round = round + 1
 
   if (state == 1):
-    #if 'b' in their_history[-20:]:
-    #  return 'b'
-    #else:
-    #  return 'c'
-    #return 'b'
     pass
   elif (state == 2):
     return 'c'
