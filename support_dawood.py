@@ -50,5 +50,6 @@ def move(my_history, their_history, my_score, their_score):
       for mod in modules:
         return 'b'
 
+
       for fan in support:
         return 'c'
