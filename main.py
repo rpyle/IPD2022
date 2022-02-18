@@ -32,6 +32,7 @@ import random
 import os.path  
 import importlib            
 
+
 import mucher
 import Kauffman
 import pacheco
@@ -60,7 +61,9 @@ import ford
 import deesen
 import rrogers
 
+
 modules = [dawood, support_dawood, bressler, Fitzgerald, graham, Lowell, miner, schoonover, whitney, wisley, mucher, Kauffman, moyer, moyertrolling1, moyertrolling2, moyertrolling3, Logan, farace, phipps, tanner, ford, mcmullen, graham, stacks, pacheco, deesen, rrogers]
+
 
 for module in modules:
     importlib.reload(module)
