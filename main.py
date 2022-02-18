@@ -64,10 +64,7 @@ betray = example1
 collude = example0
 
 
-
 modules = [example0, example1, example2, example3, example4, example5, dawood, bressler, Fitzgerald, graham, Lowell, maggin, miner, schoonover, whitney, wisley, mucher, Kauffman, moyer, moyertrolling1, moyertrolling2, moyertrolling3]
-
-
 
 
 for module in modules:
