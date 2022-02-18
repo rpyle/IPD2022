@@ -16,29 +16,40 @@ def move(my_history, their_history, my_score, their_score):
     '''
 
 
-    import example0, example1, example2, example3
-
-    import example4, example5
-
+    import mucher
+    import Kauffman
     import bressler
+    import dawood
+    import support_dawood
     import Fitzgerald
     import graham
     import Lowell
+    import maggin
     import mcmullen
     import miner
+    import schoonover
     import stacks
     import whitney
     import wisley
-    import dawood
+    import moyer
+    import moyertrolling1
+    import moyertrolling2
+    import moyertrolling3
+    import Logan
+    import farace
+    import phipps
+    import tanner
+    import ford
+    import graham
   
-    modules = [example0, example1, example2, example3, example4, example5,          bressler, Fitzgerald, graham, Lowell, mcmullen, miner, whitney, wisley, stacks]
-  
+    modules = [dawood, support_dawood, bressler, Fitzgerald, graham, Lowell, maggin, miner, schoonover, whitney, wisley, mucher, Kauffman, moyer, moyertrolling1, moyertrolling2, moyertrolling3, Logan, farace, phipps, tanner, ford, mcmullen, graham]
+      
     support = [dawood]
   
     if len(my_history)<=1:
       for mod in modules:
         return 'b'
 
+
       for fan in support:
         return 'c'
-
