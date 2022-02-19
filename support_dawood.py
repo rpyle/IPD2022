@@ -18,9 +18,9 @@ def move(my_history, their_history, my_score, their_score):
 
     import mucher
     import Kauffman
+    import pacheco
     import bressler
     import dawood
-    import support_dawood
     import Fitzgerald
     import graham
     import Lowell
@@ -40,9 +40,10 @@ def move(my_history, their_history, my_score, their_score):
     import phipps
     import tanner
     import ford
-    import graham
+    import deesen
+    import rrogers
   
-    modules = [dawood, support_dawood, bressler, Fitzgerald, graham, Lowell, maggin, miner, schoonover, whitney, wisley, mucher, Kauffman, moyer, moyertrolling1, moyertrolling2, moyertrolling3, Logan, farace, phipps, tanner, ford, mcmullen, graham]
+    modules = [bressler, Fitzgerald, graham, Lowell, maggin, miner, schoonover, whitney, wisley, mucher, Kauffman, moyer, moyertrolling1, moyertrolling2, moyertrolling3, Logan, farace, phipps, tanner, ford, mcmullen, graham, deesen, rrogers, stacks, pacheco]
       
     support = [dawood]
   
