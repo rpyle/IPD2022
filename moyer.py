@@ -28,11 +28,7 @@ def move(my_history, their_history, my_score, their_score):
     pass
   elif ((their_history[0] == 'c') and (their_history[1] == 'b') and (their_history[2] == 'c') and (their_history[3] == 'c') and (their_history[4] == 'b') and (their_history[5] == 'b') and (their_history[6] == 'b') and (their_history[7] == 'c') and (their_history[8] == 'b') and (their_history[9] == 'c')):
     state = 2
-    
-  #if round == 11:
-  #  print(their_history[0] + their_history[1] + their_history[2] + their_history[3] + #their_history[4] + their_history[5] + their_history[6] + their_history[7] + #their_history[8] + their_history[9])
 
-  #print(str(state) + ', ' + str(round))
   round = round + 1
 
   if (state == 1):
@@ -65,9 +61,5 @@ def move(my_history, their_history, my_score, their_score):
       #  return 'b'
       #else:
         return 'c'
-  #if 'b' in their_history[-20:]:
-  #  return 'b'
-  #else:
-  #  return 'c'
     
     
