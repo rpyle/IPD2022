@@ -6,7 +6,7 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = 'E4'
+team_name = 'bacon'
 strategy_name = 'History'
 strategy_description = '''\
 Use the other players history to fuel my turn.'''
