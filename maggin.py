@@ -16,14 +16,14 @@ strategy_description = 'Identify pattern that each player engages in.'
 
     # This player always adapts then either colludes or betrays based on opponent's   historical pattern.
 
-def data_collection(my_history, their_history, my_score, their_score):
+def move(my_history, their_history, my_score, their_score):
 
       if len(my_history)==0: 
           return 'b'
       else:
           # View last round
-          recent_round_them = their_history[-2]
-          recent_round_me = my_history[-2]
+          recent_round_them = their_history[-1]
+          recent_round_me = my_history[-1]
         
           # Examine rounds before that one
           for round in range(len(my_history)-1):
