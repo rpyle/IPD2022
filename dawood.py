@@ -1,6 +1,7 @@
 team_name = 'dawood'
 strategy_name = 'gradual collude '
 strategy_description = 'collude first two runs, betray all others until opponent colludes'
+
 #cooperates the first move, then begins to defect after two consecutive defections of its opponent. Returns to cooperation if opponent does not defect after the previous two moves
 
 def move(my_history, their_history, my_score, their_score):
@@ -22,3 +23,4 @@ def move(my_history, their_history, my_score, their_score):
         return 'b' 
     else: 
       return 'c'
+
