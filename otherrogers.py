@@ -10,7 +10,7 @@ import random
 
 team_name = 'Rogers'
 strategy_name = 'RATS'
-strategy_description = 'If I can not win, you can not either'
+strategy_description = 'Just doing rat things'
     
 def move(my_history, their_history, my_score, their_score):
     '''Make my move based on the history with this player.
