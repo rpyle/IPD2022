@@ -7,8 +7,8 @@
 ####
 
 team_name = 'Tanner'
-strategy_name = 'Betray'
-strategy_description = 'Always betray.'
+strategy_name = 'Foat'
+strategy_description = 'Just a combination for now.'
     
 def move(my_history, their_history, my_score, their_score):
     '''Make my move based on the history with this player.
@@ -22,4 +22,13 @@ def move(my_history, their_history, my_score, their_score):
     '''
     
     #This example player always betrays.      
-    return 'b'
+    if len(my_history)==0:
+      return 'c' # Collude
+    elif my_history[-1]== 'c':
+      return 'b' # Betray
+    elif my_history[-1]== 'c' and their_history[-1]== 'b':
+      return 'c' # Collude if they had betreyed previously and I colluded
+    elif my_history[-1]== 'b' and their_history[-1]== 'c':
+      return their_history[-1] # Previous enemy move
+    else:
+      return 'b' # Betray

@@ -1,9 +1,13 @@
 team_name = 'dawood'
 strategy_name = 'gradual collude '
-strategy_description = 'collude first two runs, betray all others untill opponent colludes'
-    
+strategy_description = 'collude first two runs, betray all others until opponent colludes'
+
+#cooperates the first move, then begins to defect after two consecutive defections of its opponent. Returns to cooperation if opponent does not defect after the previous two moves
+
 def move(my_history, their_history, my_score, their_score):
-    '''Make my move based on the history with this player.
+    '''Collude the very first round
+    
+     Make my move based on the history with this player.
     
     history: a string with one letter (c or b) per round that has been played with this opponent.
     their_history: a string of the same length as history, possibly empty. 
@@ -13,13 +17,10 @@ def move(my_history, their_history, my_score, their_score):
     Returns 'c' or 'b' for collude or betray.
     '''
 
-    if len(my_history)<=1: # collude first two rounds
+    if len(my_history)<=1: # collude first round
         return 'c'
-    elif their_history[-1]=='b':
+    elif their_history[-1]=='b' and their_history[-2]=='b':
         return 'b' 
-    else:
-        return 'c'
-    if (their_score < 50):
-      return 'b'
+    else: 
+      return 'c'
 
-#cooperates the two first moves, then begins to defect after two consecutive defections of its opponent. Returns to cooperation after two consecutive cooperations of its opponent.
